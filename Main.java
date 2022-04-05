@@ -11,13 +11,13 @@ class Main {
 			System.out.println("Enter the number: ");
 			int number= scr.nextInt();
 			if (number >= -25 && number <=25) {
-				System.out.println("This numbe is in the range");
+				System.out.println("This number is in the range");
 			}
 			else if(number < -25 || number > 25) {
-				System.out.println("This numbe is out of the range");
+				System.out.println("This number is out of the range");
 			}
 			
-			System.out.println("If you want to continue the program the Type: y or not then type n : ");
+			System.out.println("If you want to continue the program then Type: y or not type n : ");
 			char disision = scr1.nextLine().charAt(0);
 			if (disision=='n') {
 				number1=10;
