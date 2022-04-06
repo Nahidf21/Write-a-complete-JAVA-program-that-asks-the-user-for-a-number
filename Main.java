@@ -1,7 +1,9 @@
 import java.util.Scanner;
 class Main {
-  public static void main(String[] args) {
-    Scanner scr = new Scanner(System.in);
+	
+  	public static void main(String[] args) {
+		
+  		Scanner scr = new Scanner(System.in);
 		Scanner scr1 = new Scanner(System.in);
 		
 		int number1=0;
