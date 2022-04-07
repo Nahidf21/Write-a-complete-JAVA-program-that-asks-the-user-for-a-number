@@ -9,8 +9,7 @@ class Main {
 		int number1=0;
 		
 		while(number1 < 10) {
-			
-			System.out.println("Enter the number: ");
+			System.out.println("Enter the number you want to put: ");
 			int number= scr.nextInt();
 			if (number >= -25 && number <=25) {
 				System.out.println("This number is in the range");
@@ -18,7 +17,6 @@ class Main {
 			else if(number < -25 || number > 25) {
 				System.out.println("This number is out of the range");
 			}
-			
 			System.out.println("If you want to continue the program then Type: y or not type n : ");
 			char disision = scr1.nextLine().charAt(0);
 			if (disision=='n') {
