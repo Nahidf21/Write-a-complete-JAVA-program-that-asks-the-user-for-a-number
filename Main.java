@@ -12,9 +12,9 @@ public class Main {
 		int decision=0;
     while (decision<2){
       
-      System.out.print("Enter the minimum tempareture in degrees  Celsius : ");
+      System.out.print("Enter the minimum tempereture in degrees  Celsius : ");
 		  double in_tem1 =tem1.nextInt();
-		  System.out.print("Enter the maximum tempareture in degrees  Celsius : ");
+		  System.out.print("Enter the maximum tempereture in degrees  Celsius : ");
 		  double in_tem2 =tem2.nextInt();
 		  System.out.print("Enter the values of a range of temperatur : ");
 		  double in_tem3 =tem3.nextInt();
@@ -34,3 +34,5 @@ public class Main {
     }
   }
 }
+
+
