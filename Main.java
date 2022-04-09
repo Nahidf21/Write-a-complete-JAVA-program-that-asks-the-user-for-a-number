@@ -1,30 +1,36 @@
 import java.util.Scanner;
-class Main {
-	
-  	public static void main(String[] args) {
-		
-  		Scanner scr = new Scanner(System.in);
-		Scanner scr1 = new Scanner(System.in);
-		
-		int number1=0;
-		
-		while(number1 < 10) {
-			System.out.println("Enter the number you want to put: ");
-			int number= scr.nextInt();
-			if (number >= -25 && number <=25) {
-				System.out.println("This number is in the range");
-			}
-			else if(number < -25 || number > 25) {
-				System.out.println("This number is out of the range");
-			}
-			System.out.println("If you want to continue the program then Type: y or not type n : ");
-			char disision = scr1.nextLine().charAt(0);
-			if (disision=='n') {
-				number1=10;
-				System.out.println("Work done");
-			}
-		}
-			
-	}
 
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner tem1 = new Scanner(System.in);
+		Scanner tem2 = new Scanner(System.in);
+		Scanner tem3 = new Scanner(System.in);
+    Scanner tem4 = new Scanner(System.in);
+
+		int decision=0;
+    while (decision<2){
+      
+      System.out.print("Enter the minimum tempareture in degrees  Celsius : ");
+		  double in_tem1 =tem1.nextInt();
+		  System.out.print("Enter the maximum tempareture in degrees  Celsius : ");
+		  double in_tem2 =tem2.nextInt();
+		  System.out.print("Enter the values of a range of temperatur : ");
+		  double in_tem3 =tem3.nextInt();
+		  System.out.println("° Celsius" +"			"+"° Fahrenheit");
+
+      for (double i= in_tem1; i<= in_tem2; i=i+in_tem3 ) {
+			  double f;
+			  f=((9.0/5.0)*i)+32;
+			  System.out.println(" "+ i+ "		=		"+f);
+		}
+      System.out.println("If you want to continue the program then Type: y or not type n : ");
+			char disision_1 = tem4.nextLine().charAt(0);
+			if (disision_1=='n') {
+				decision=2;
+				System.out.println("..................Work Done.................");
+      }
+    }
+  }
 }
